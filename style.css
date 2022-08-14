@@ -1,3 +1,131 @@
-h1 {
-   color: rebeccapurple;
+----------------------------------RESET-------------------------------------------- html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: 100%;
+   font-weight: normal;
+}
+
+ul {
+   list-style: none;
+}
+
+button,
+input,
+select {
+   margin: 0;
+}
+
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+img,
+video {
+   height: auto;
+   max-width: 100%;
+}
+
+iframe {
+   border: 0;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+td,
+th {
+   padding: 0;
+}
+
+/*Root element*/
+:root {
+   --left-font: 'Staatliches', cursive;
+   --right-font: 'Roboto', sans-serif;
+}
+
+/* Left side*/
+
+.container {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.left-side {
+   font-family: var(--left-font);
+   background-image: url('img/backgroung.jpg');
+   background-position: 50% 40%;
+   background-size: 400%;
+   background-repeat: no-repeat;
+   width: 40vw;
+}
+
+.logo {
+   position: relative;
+   top: 20vh;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 0.5rem;
+   background-color: rgba(0, 0, 0, 0.7);
+   height: 7rem;
+}
+
+.logo-img {
+   background-image: url('img/logo.png');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100%;
+   width: 7rem;
+   height: 7rem;
+}
+
+.logo-text {
+   color: white;
+   font-size: 3.5rem;
+}
+
+/* Right side*/
+.right-side {
+   font-family: var(--right-font);
 }
