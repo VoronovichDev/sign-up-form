@@ -37,12 +37,14 @@
                <div class="inputs-block">
                   <div class="input">
                      <label for="first-name">First name</label>
-                     <input type="text" name="first-name" id="first-name" required>
+                     <input type="text" name="first-name" id="first-name" required minlength="2" maxlength="50"
+                        pattern="^[A-Z][-a-zA-Z]+$" title="Don't dorget to check the capital letter">
                   </div>
 
-                  <div class="input">
+                  <div class=" input">
                      <label for="last-name">Last name</label>
-                     <input type="text" name="last-name" id="last-name">
+                     <input type="text" name="last-name" id="last-name" required minlength="2" maxlength="50"
+                        pattern="^[A-Z][-a-zA-Z]+$" title="Don't dorget to check the capital letter">
                   </div>
 
                   <div class="input">
